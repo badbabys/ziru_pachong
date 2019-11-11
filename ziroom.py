@@ -37,7 +37,7 @@ def tongzhou(url):
     # print(response.status_code)
     #获取页面
     html = response.text
-    #清晰页面
+    #清洗页面
     bs = BeautifulSoup(html,"lxml")
     #找到覆盖的数据信息 的div
     div = bs.find('div', class_ = "Z_list-box")
